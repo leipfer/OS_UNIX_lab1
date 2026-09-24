@@ -1,0 +1,5 @@
+# Имитация долгой компиляции: создаёт промежуточный файл и «думает» 10 секунд
+trap 'kill $! 2>/dev/null; exit 143' TERM INT HUP QUIT
+touch intermediate.o
+sleep 10 & wait $!
+exec cc "$@"
