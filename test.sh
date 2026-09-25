@@ -1,3 +1,4 @@
+#!/bin/sh
 # Демонстрация работы build.sh на примерах. Запуск: sh test.sh
 cd "$(dirname "$0")/examples" || exit 1
 B=../build.sh

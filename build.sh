@@ -1,3 +1,4 @@
+#!/bin/sh
 E_USAGE=1
 E_NOSRC=2
 E_TYPE=3
